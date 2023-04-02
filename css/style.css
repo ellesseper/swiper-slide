@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+section {
+    margin: 3rem 0;
+}
+
+/* ===================Navigation section=================== */
+#main-navigation {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#main-navigation ul a {
+    color: #000;
+}
+
+#main-navigation #dropdown-menu {
+    top: 4rem!important;
+}
+
+#main-navigation .brand-logo {
+    width: 120px;
+    right: 0;
+    left: 0;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    transform: none;
+}
+
+#main-navigation .sidenav-trigger {
+    float: right;
+    color: #afafaf;
+}
+
+#main-navigation svg {
+    height: 4.5rem;
+    width: 2rem;
+    fill: #da8ff6;
+}
+
+/* ===================Main Visual section=================== */
+.main-visual {
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.main-visual .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-visual h1 {
+    margin: 0 0px 30px 0;
+    font-size: 6vw;
+    font-weight: 700;
+}
+
+.main-visual span {
+    color: #05D558;
+}
+
+.main-visual p {
+    margin-bottom: 20px;
+}
+
+.main-visual .column-second {
+    position: relative;
+}
+
+.main-visual .column-second img {
+    margin-bottom: -50px;
+}
+
+.main-visual .row-button {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-visual .download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 3.5rem;
+    border-radius: 50px;
+    color: #000;
+    text-transform: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.main-visual .download-btn svg {
+    width: 1.8rem;
+    margin-right: 2px;
+    fill: #000;
+}
+
+.main-visual .download-btn:nth-child(1) {
+    background-color: #A2F2C3;
+}
+
+.main-visual .download-btn:nth-child(2) {
+    margin-left: 0.5rem;
+    background-color: #E5C4EF;
+}
+
+/* Circle Backgrounds */
+.circle-green,
+.circle-purple {
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.circle-purple {
+    top: 0;
+    height: 0;
+    width: 30vw;
+    right: -120%;
+    padding: 70%;
+    background: #E5C4EF;
+}
+
+.circle-purple::after {
+    position: absolute;
+    left: 47px;
+    top: 20%;
+    z-index: 0;
+    height: 0;
+    padding: 20%;
+    border-radius: 50%;
+    background: #E2B9F1;
+    content: "";
+    -webkit-transform: translate(0, -20%);
+    -moz-transform: translate(0, -20%);
+    -o-transform: translate(0, -20%);;
+    transform: translate(0, -20%);
+}
+
+.circle-green {
+    top: 50%;
+    left: -50%;
+    padding: 20%;
+    height: 0;
+    width: 30vw;
+    background: #A2F2C3;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+/* ===================slider section=================== */
+.service-section .title-section h1 {
+    margin: 0;
+}
+
+.service-section .subtitle {
+    font-size: 25px;
+}
+
+.swiper {
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+    padding-bottom: 60px !important;
+    margin-top: 10rem;
+    overflow: unset!important;
+    -webkit-animation: fadeIn 6s;
+    -moz-animation: fadeIn 6s;
+    -o-animation: fadeIn 6s;
+    animation: fadeIn 6s;
+} 
+
+.swiper .swiper-wrapper {
+    align-items: center;
+    height: 25vw;
+}
+
+.swiper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100% !important;
+    border-radius: 5px;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.swiper .swiper-slide .circleTxt-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.swiper .swiper-slide .circleTxt-wrapper img {
+    width: 0;
+}
+
+/* random scaling and position of display items */
+.swiper .swiper-slide-prev {
+    top: 0;
+    -webkit-transform: scale(1) !important;
+    -moz-transform: scale(1) !important;
+    -o-transform: scale(1) !important;;
+    transform: scale(1) !important;
+}
+.swiper .swiper-slide-next {
+    top: -23%;
+    -webkit-transform: scale(1.2) !important;
+    -moz-transform: scale(1.2) !important;
+    -o-transform: scale(1.2) !important;
+    transform: scale(1.2) !important;
+}
+
+.swiper .swiper-slide.childBeforePrev {
+    top: 20%;
+    -webkit-transform: scale(1.5) !important;
+    -moz-transform: scale(1.5) !important;
+    -o-transform: scale(1.5) !important;
+    transform: scale(1.5) !important;
+}
+
+.swiper-slide-next + .swiper-slide {
+    top: -60%;
+    margin: 0 -5%;
+    -webkit-transform: scale(1.1) !important;
+    -moz-transform: scale(1.1) !important;
+    -o-transform: scale(1.1) !important;
+    transform: scale(1.1) !important;
+}
+
+.swiper .swiper-slide.swiper-slide-active {
+    margin: 0 3vw;
+    -webkit-transform: scale(1.3) !important;
+    -moz-transform: scale(1.3) !important;
+    -o-transform: scale(1.3) !important;
+    transform: scale(1.3) !important;
+}
+
+.swiper .swiper-slide .gradient-background{
+    position: relative;
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    background: -o-linear-gradient(left,#B19CD8 0%,#E6D1F2 100%);
+    background: -webkit-gradient(linear,left top,right top,from(#B19CD8),to(#E6D1F2));
+    background: linear-gradient(to right,#B19CD8 0%,#E6D1F2 100%);
+    -webkit-transition: 0.5s ease-out;
+    -moz-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+}
+
+.swiper .swiper-slide .grey-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background: #444;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.swiper .swiper-slide .img-default,
+.swiper .swiper-slide .img-active {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.swiper .swiper-slide .img-default img {
+    width: 40%;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -webkit-animation: rotate-animation 8s linear infinite;
+    -moz-animation: rotate-animation 8s linear infinite;
+    -o-animation: rotate-animation 8s linear infinite;
+    animation: rotate-animation 8s linear infinite;
+}
+
+.swiper .swiper-slide .img-active img {
+    width: 0;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -webkit-animation: rotate-animation 20s linear infinite;
+    -moz-animation: rotate-animation 20s linear infinite;
+    -o-animation: rotate-animation 20s linear infinite;
+    animation: rotate-animation 20s linear infinite;
+}
+
+.swiper .swiper-slide-active .img-default img {
+    width: 0;
+}
+
+.swiper .swiper-slide-active .circleTxt-wrapper img {
+    width: 100%;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    animation: fadeIn 3s;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.swiper .swiper-slide-active .img-active img {
+    width: 90%;
+}
+
+.swiper .swiper-slide-active .gradient-background {
+    width: 88% !important;
+    height: 88% !important;
+}
+.swiper .swiper-slide-active .grey-bg {
+    width: 65%;
+    height: 65%;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+@keyframes rotate-animation {
+	0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transoform: rotate(0deg);
+		transform: rotate(0deg);
+        transform-origin: center center;
+    }
+    50% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);
+        transform-origin: center center;
+        }
+    75% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+        transform-origin: center center;
+	}
+	100% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+		transform: rotate(0deg);
+        transform-origin: center center;
+	}
+}
+
+@media screen and (min-width: 600px){
+    .main-visual .download-btn {
+        width: 50%;
+    }
+    .main-visual {
+        text-align: unset;
+        height: 100vh;
+    }
+    .main-visual .row-button {
+        justify-content: left;
+    }
+    .main-visual .row {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main-visual h1 {
+        font-size: 4vw;
+    }
+    .circle-purple {
+        right: -70%;
+    }
+    .main-visual .download-btn {
+        width: 40%;
+    }
+    .circle-green {
+        left: -30%;
+    }
+}
+
+@media screen and (min-width: 991px){
+    #main-navigation .brand-logo {
+        left: 0;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .main-visual .download-btn {
+        height: 4.5rem;
+        font-size: 21px;
+    }
+}
+
+
